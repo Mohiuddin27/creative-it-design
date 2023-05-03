@@ -109,14 +109,31 @@ $(function () {
           { breakpoint: 414, settings: { slidesToShow: 1, slidesToScroll: 1 } },
         ],
       }),
-
-      $(".our_student_talk").slick({
-        slidesToShow: 1,
+      $(".digital-course").slick({
+        slidesToShow: 3,
         slidesToScroll: 1,
         arrows: !0,
         arrows: !0,
         infinite: !0,
         autoplaySpeed: 2e3,
+        prevArrow: '<i class="fa fa-angle-left topPrevarrow"></i>',
+        nextArrow: '<i class="fa fa-angle-right topNextarrow"></i>',
+        responsive: [
+          { breakpoint: 1200, settings: { slidesToShow: 2} },
+          { breakpoint: 992, settings: { slidesToShow: 3 } },
+          { breakpoint: 768, settings: { slidesToShow: 2 } },
+          { breakpoint: 576, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+          { breakpoint: 414, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+        ],
+      }),
+      $(".our_student_talk").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:true,
+        arrows: !0,
+        arrows: !0,
+        infinite: !0,
+        autoplaySpeed:1500,
         prevArrow: '<i class="fa fa-angle-left topPrevarrow"></i>',
         nextArrow: '<i class="fa fa-angle-right topNextarrow"></i>',
         responsive: [
@@ -127,6 +144,7 @@ $(function () {
           { breakpoint: 414, settings: { slidesToShow: 1, slidesToScroll: 1 } },
         ],
       }),
+      
     $(".course_mix_btn").slick({
       autoplay: !1,
       focusOnSelect: !0,
