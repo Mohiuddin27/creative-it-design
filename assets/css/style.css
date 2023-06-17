@@ -65,6 +65,9 @@ input:focus {
    padding:5px!important;
    font-weight:600!important;
 }
+.dropdown:hover .dropdown-menu {
+   display: block;
+ }
 .dropdown-menu{
    background:transparent!important;
    border:none;
@@ -615,7 +618,7 @@ div.success_menu ul.common_slider_class li {
 }
 .input-feilds input::placeholder{
    padding-left:40px;
-   color:white!important;
+   color:BLACK!important;
 }
 .input-feilds input{
    height:45px;
@@ -7104,6 +7107,12 @@ p {
    .our_student_talk .topNextarrow{
       margin-top: -260px!important;
    margin-right: 90px;
+   }
+   .footer-social{
+      margin-top:20px
+   }
+   .work{
+      display:none;
    }
    .our_student_talk .topPrevarrow {
       margin-top: -260px!important;

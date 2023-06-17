@@ -1,3 +1,19 @@
+
+  // Enable hover behavior for dropdowns
+        var dropdownTriggerList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+        dropdownTriggerList.map(function (dropdownTrigger) {
+            var dropdownMenu = dropdownTrigger.nextElementSibling;
+            dropdownTrigger.addEventListener('mouseenter', function () {
+                dropdownMenu.classList.add('show');
+            });
+            dropdownTrigger.addEventListener('mouseleave', function () {
+                dropdownMenu.classList.remove('show');
+            });
+        });
+
+
+
+
 function Tabs() {
   var e = function () {
       for (
@@ -76,7 +92,7 @@ $(function () {
     }),
     $(".venobox").venobox(),
     $(".course_slider_top").slick({
-      slidesToShow: 6,
+      slidesToShow: 4,
       slidesToScroll: 1,
       arrows: !0,
       arrows: !0,
@@ -85,7 +101,7 @@ $(function () {
       prevArrow: '<i class="fa fa-angle-left topPrevarrow"></i>',
       nextArrow: '<i class="fa fa-angle-right topNextarrow"></i>',
       responsive: [
-        { breakpoint: 1200, settings: { slidesToShow: 5 } },
+        { breakpoint: 1200, settings: { slidesToShow: 4 } },
         { breakpoint: 992, settings: { slidesToShow: 4 } },
         { breakpoint: 768, settings: { slidesToShow: 2 } },
         { breakpoint: 576, settings: { slidesToShow: 2, slidesToScroll: 1 } },
@@ -133,7 +149,7 @@ $(function () {
         arrows: !0,
         arrows: !0,
         infinite: !0,
-        autoplaySpeed:1500,
+        autoplaySpeed:3500,
         prevArrow: '<i class="fa fa-angle-left topPrevarrow"></i>',
         nextArrow: '<i class="fa fa-angle-right topNextarrow"></i>',
         responsive: [
