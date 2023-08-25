@@ -7378,7 +7378,13 @@ p {
    .footer_btn {
       text-align: center;
    }
-
+  .blog-detail{
+    width:95%!important;
+  }
+  .blog-detail h1{
+   font-size:25px!important;
+   font-weight: 600;
+  }
 
 
    /*==========form ends here================*/
