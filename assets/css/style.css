@@ -7300,7 +7300,18 @@ p {
 
    /*==========form ends here================*/
 }
-
+/* blog */
+.blog-header{
+   background-image: url('../images/background.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.acthor{
+   font-weight: 400;
+   font-size:16px;
+   color:rgb(59 59 59 / 79%);
+}
 @media (max-width:575.98px) {
 
    /*==========model starts here================*/
